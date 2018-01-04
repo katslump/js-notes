@@ -138,10 +138,53 @@ var john = {
     
 // IMMEDIATELY INVOKED FUNCTION EXPRESSIONS (IIFE)
 
+    Regular Function:
+    
+        function game() {
+            var score = Math.random() * 10;
+            console.log(score >= 5);
+        }
+        game();
+    
+    IFFE: 
+    
+        (function () {
+            var score = Math.random() * 10;
+            console.log(score >=5);
+        })();
+        
+        
+        How it Works:
+            Tricks the parser into thinking we have an expression and NOT a declaration. If we werre to create a function without a name, the parser would through an error. The solution is to wrap the entire thing in paranthesis. Whats inside of paranthesis cannot be a statement in JS.
+        
+        Pros: 
+            + Great for data privacy b/c of scope
+            
+// CLOSURES
+    
+    Rule
+        The inner function always has access to the variables and params of its outer function, event after the outer function has returned. This has to do with the execution stack and scope chain.
+        
+    Example
+        function retirement(retirementAge) {
+            var a = ' years left until retiremenet.';
+            return function(yearOfBirth) {
+                var age = 2018 - yearOfBirth;
+                console.log((retirementAge - age) + a);
+            }
+        }
+        
+        var retirementUS = retirement(66);
+        retirementUS(1990);
+        
+    Result
+        40 years left until retirement
+        (2016 - (2016-1990))
     
     
-    
-    
+// BIND, CALL, APPLY
+
+
     
 
     
