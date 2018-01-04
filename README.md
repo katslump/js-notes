@@ -137,7 +137,8 @@
     
     
 ## IMMEDIATELY INVOKED FUNCTION EXPRESSIONS (IIFE)
- Regular Function:
+    
+    Regular Function:
     
         function game() {
             var score = Math.random() * 10;
