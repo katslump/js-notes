@@ -1,7 +1,7 @@
 # Advanced Javascript Notes
 
 ## OBJECTS 
-/* In javascript, it is said (almost) everything is an object.
+    In javascript, it is said (almost) everything is an object.
 
     You have 1) primitives and 2) everything else
 
@@ -23,7 +23,7 @@
 
     ^^^ ALL OF THESE ARE OBJECTS
 
-## CONSTRCUTORS AND INSTANCES
+## CONSTRUCTORS AND INSTANCES
 
     Person 
     - name
@@ -34,7 +34,7 @@
     In other languages... "class". In js they are CONSTRUCTORS
     You create instances of this constructor for Jane, John, and Joe.
 
-##INHERITANCE
+## INHERITANCE
     When an instance inherits traits from another instance. 
 
     Athlete
